@@ -1,13 +1,15 @@
 /*
 This program should count from 0-5 on the top line of the
-LCD continously every 2 seconds
+LCD every time there is a RISING EDGE on SW3
 
 What one statement must you add to this code to make this happen
 */
 #include "mbed.h"
 #include "Grove_LCD_RGB_Backlight.h"
 
-Ticker Fred;
+
+InterruptIn Sally(SW3);
+
 
 short counter=0;
 char buf[4];
@@ -21,7 +23,7 @@ Grove_LCD_RGB_Backlight lcd(D14,D15);
 
 int main(void)
 {
-                                // YOUR STATEMENT goes on THIS LINE
+                                     // YOUR STATEMENT goes on THIS LINE
     lcd.clear();
     lcd.setRGB(0x00,0x00,0xff);
     for(;;)
