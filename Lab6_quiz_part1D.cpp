@@ -8,7 +8,7 @@ What one statement must you add to this code to make this happen
 #include "Grove_LCD_RGB_Backlight.h"
 
 
-InterruptIn Sally(SW3);
+InterruptIn gail(SW2);
 
 
 short counter=0;
