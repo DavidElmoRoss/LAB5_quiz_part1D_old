@@ -1,6 +1,6 @@
 /*
-This program should count from 0-5 on the top line of the
-LCD every time there is a RISING EDGE on SW3
+This program should count from 0-8 on the top line of the
+LCD every time there is a Falling EDGE on SW2
 
 What one statement must you add to this code to make this happen
 */
@@ -25,10 +25,10 @@ int main(void)
 {
                                      // YOUR STATEMENT goes on THIS LINE
     lcd.clear();
-    lcd.setRGB(0x00,0x00,0xff);
+    lcd.setRGB(0xFF,0xFF,0xff);
     for(;;)
     {
-        while(counter <=5)
+        while(counter <=8)
         {
           lcd.locate(7,0);
           sprintf(buf,"%d",counter);
