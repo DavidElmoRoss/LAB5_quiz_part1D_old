@@ -1,5 +1,5 @@
 /*
-This program should count from 0-8 on the top line of the
+This program should increase the count from 0-8 on the top line of the
 LCD every time there is a Falling EDGE on SW2
 
 What one statement must you add to this code to make this happen
