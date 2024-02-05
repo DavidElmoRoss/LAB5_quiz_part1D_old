@@ -23,7 +23,7 @@ Grove_LCD_RGB_Backlight lcd(D14,D15);
 
 int main(void)
 {
-     gail.fall(&count) ;                              // YOUR STATEMENT goes on THIS LINE
+                                   // YOUR STATEMENT goes on THIS LINE
     lcd.clear();
     lcd.setRGB(0xFF,0xFF,0xff);
     for(;;)
